@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "./home/Footer";
 
 interface ILayoutProps {
   children?: React.ReactNode;
@@ -9,7 +10,7 @@ const Layout: React.FC<ILayoutProps> = ({ children }) => {
   return (
     <>
       {children}
-      <h1>Footer</h1>
+      <Footer/>
     </>
   );
 };
