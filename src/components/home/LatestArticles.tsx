@@ -28,7 +28,7 @@ const LatestArticles = () => {
 
  
   return (
-    <Box maxWidth="1440px" m="auto" overflow="hidden" px={{base:"4px",md:"15px",xl:"108px"}} >
+    <Box maxW="1440px" m="auto" overflow="hidden" px={{base:"4px",md:"15px",xl:"108px"}} >
       <Heading
         fontFamily={{base:"heading",md:"body"}}
         color="font.head"
@@ -36,8 +36,8 @@ const LatestArticles = () => {
         lineHeight={{base:"54px",md:"42px"}}
         fontWeight={"600"}
         letterSpacing={"2px"}
-        marginTop={{base:"132px",md:"157px"}}
-        marginBottom={{base:"23px",md:"83px"}}
+        mt={{base:"132px",md:"157px"}}
+        mb={{base:"23px",md:"83px"}}
         textAlign={{base:"center",md:"left"}}
       >
         Latest Articles
@@ -64,7 +64,7 @@ const LatestArticles = () => {
       <Flex
         alignItems={"center"}
         gap={{base:"7px",md:"14px"}}
-        marginY={{base:"52px",md:"65px"}}
+        my={{base:"52px",md:"65px"}}
         justifyContent={"center"}
       >
         <Flex
@@ -72,8 +72,8 @@ const LatestArticles = () => {
           alignItems={"center"}
           justifyContent={"center"}
           border={{base:`1px solid ${tabIndex === 0?'#AFAFAF':'#424961'}`,md:`2px solid ${tabIndex === 0?'#AFAFAF':'#424961b9'}`}}
-          width={{base:"16px",md:"28px"}}
-          height={{base:"16px",md:"28px"}}
+          w={{base:"16px",md:"28px"}}
+          h={{base:"16px",md:"28px"}}
           borderRadius={"5px"}
           onClick={handlePrev}
           disabled={tabIndex == 0}
@@ -98,8 +98,8 @@ const LatestArticles = () => {
           alignItems={"center"}
           justifyContent={"center"}
           border={{base:`1px solid ${tabIndex === 0?'#AFAFAF':'#424961'}`,md:`2px solid ${tabIndex === 1?'#AFAFAF':'#424961b9'}`}}
-          width={{base:"16px",md:"28px"}}
-          height={{base:"16px",md:"28px"}}
+          w={{base:"16px",md:"28px"}}
+          h={{base:"16px",md:"28px"}}
           borderRadius={"5px"}
           onClick={handleNext}
           disabled={tabIndex == 1}

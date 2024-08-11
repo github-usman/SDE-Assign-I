@@ -11,17 +11,17 @@ const AboutUs = () => {
       <Flex
         justify={"space-between"}
         m={"auto"}
-        marginTop={{ base: "0",xlg:"186px" }}
+        mt={{ base: "0",xlg:"186px" }}
         alignItems={"center"}
-        maxWidth={"1030px"}
+        maxW={"1030px"}
         gap={"1rem"}
-        padding={{ base: "140px 10px", sm: "140px 50px", md: "0 4px" }}
+        p={{ base: "140px 10px", sm: "140px 50px", md: "0 4px" }}
         direction={{ base: "column", md: "row" }}
       >
         <ChakraNextImage
           src={about_us}
           alt={"Naturally made Healthcare Pizza"}
-          maxWidth="384px"
+          maxW="384px"
           maxH="468px"
           objectFit={"cover"}
           display={{ base: "none", md: "block" }}
@@ -30,7 +30,7 @@ const AboutUs = () => {
           direction={"column"}
           alignItems={{ base: "center", md: "flex-start" }}
           textAlign={{ base: "center", md: "start" }}
-          maxWidth={"447px"}
+          maxW={"447px"}
         >
           <Heading
             fontFamily="heading"
@@ -47,7 +47,7 @@ const AboutUs = () => {
             lineHeight={{ base: "21px", md: "27px" }}
             fontWeight={"400"}
             color={"font.details"}
-            margin={{ base: "21px 0", md: "27.41px 0px 21.59px 0px" }}
+            m={{ base: "21px 0", md: "27.41px 0px 21.59px 0px" }}
           >
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry&#39s standard dummy text
@@ -60,10 +60,10 @@ const AboutUs = () => {
               fontFamily={"body"}
               as={"button"}
               borderRadius={{ base: "27px", md: "21px" }}
-              maxWidth={"fit-content"}
+              maxW={"fit-content"}
               fontSize={{ base: "11", md: "16px" }}
               lineHeight={{ base: "20px", md: "36px" }}
-              padding={{ base: "4px 22px", md: "3px 26px" }}
+              p={{ base: "4px 22px", md: "3px 26px" }}
               color={"font.white"}
               letterSpacing={"3%"}
               fontWeight={"600"}

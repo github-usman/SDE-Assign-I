@@ -16,12 +16,12 @@ const Footer = () => {
   return (
     <Box
       bg={theme.colors.bg.contentBg}
-      padding={{ base: "52px 41px 52px 41px", md: "84px 6px 92px 6px" }}
+      p={{ base: "52px 41px 52px 41px", md: "84px 6px 92px 6px" }}
       id="Footer"
     >
       <Flex
-        maxWidth="1440px"
-        marginX={"auto"}
+        maxW="1440px"
+        mx={"auto"}
         px={{ base: "4px", md: "15px", xl: "104px" }}
         direction={{ base: "column", md: "row" }}
         justifyContent={"space-between"}
@@ -29,16 +29,16 @@ const Footer = () => {
         <MotionBox
           src={food_truck}
           alt={"food truck"}
-          width={{ base: "75px", md: "161px" }}
-          height={{ base: "58px", md: "125px" }}
+          w={{ base: "75px", md: "161px" }}
+          h={{ base: "58px", md: "125px" }}
           objectFit={"cover"}
           borderRadius={"50px"}
           alignSelf={"center"}
           animate={movingAnimation}
         />
         <Flex
-          maxWidth={{ base: "300px", lg: "232px" }}
-          marginTop={{ base: "42px", md: "0" }}
+          maxW={{ base: "300px", lg: "232px" }}
+          mt={{ base: "42px", md: "0" }}
           direction={"column"}
           gap={{ base: "0", lg: "14px" }}
         >
@@ -71,7 +71,7 @@ const Footer = () => {
         </Flex>
         <Flex
           gap={"14px"}
-          marginTop={{ base: "29px", md: "0" }}
+          mt={{ base: "29px", md: "0" }}
           direction={"column"}
           maxW={"153px"}
         >
@@ -102,7 +102,7 @@ const Footer = () => {
           </Flex>
         </Flex>
         <Flex
-          maxWidth={"197px"}
+          maxW={"197px"}
           alignSelf={{ base: "center", md: "end" }}
           direction={"column"}
           gap={"14px"}
@@ -116,7 +116,7 @@ const Footer = () => {
               lineHeight={"27.22px"}
               letterSpacing={"3%"}
               display={{ base: "none", md: "block" }}
-              marginBottom={"11px"}
+              mb={"11px"}
             >
               Social Links
             </Heading>
@@ -124,15 +124,15 @@ const Footer = () => {
               gap={"7px"}
               display={{ base: "none", md: "flex" }}
               justifyContent={"end"}
-              marginTop={"-25px"}
+              mt={"-25px"}
               alignItems={"center"}
             >
               <Link href="#Hero">
                 <ChakraNextImage
                   src={instagram}
                   alt={"instagram"}
-                  width="21px"
-                  height="21px"
+                  w="21px"
+                  h="21px"
                   objectFit={"cover"}
                   borderRadius={"2px"}
                 />
@@ -141,8 +141,8 @@ const Footer = () => {
                 <ChakraNextImage
                   src={twitter}
                   alt={"twitter"}
-                  width="69px"
-                  height="69px"
+                  w="69px"
+                  h="69px"
                   objectFit={"cover"}
                   borderRadius={"2px"}
                 />
@@ -151,9 +151,9 @@ const Footer = () => {
                 <ChakraNextImage
                   src={face_book}
                   alt={"facebook"}
-                  marginLeft={"5px"}
-                  width="21px"
-                  height="21px"
+                  ml={"5px"}
+                  w="21px"
+                  h="21px"
                   objectFit={"cover"}
                   borderRadius={"2px"}
                 />
@@ -167,7 +167,7 @@ const Footer = () => {
             fontSize={{ base: "8.76px", md: "14.66px" }}
             lineHeight={{ base: "8.13px", md: "25.12px" }}
             textAlign={"center"}
-            marginTop={{ base: "30px", md: "90px" }}
+            mt={{ base: "30px", md: "90px" }}
             fontFamily={"mono"}
           >
             © 2022 Food Truck Example
@@ -181,8 +181,8 @@ const Footer = () => {
               <ChakraNextImage
                 src={instagram}
                 alt={"instagram"}
-                width="12px"
-                height="12px"
+                w="12px"
+                h="12px"
                 objectFit={"cover"}
                 borderRadius={"2px"}
               />
@@ -191,8 +191,8 @@ const Footer = () => {
               <ChakraNextImage
                 src={twitter2}
                 alt={"twitter2"}
-                width="12px"
-                height="12px"
+                w="12px"
+                h="12px"
                 objectFit={"cover"}
                 borderRadius={"2px"}
               />
@@ -201,8 +201,8 @@ const Footer = () => {
               <ChakraNextImage
                 src={face_book}
                 alt={"facebook"}
-                width="12px"
-                height="12px"
+                w="12px"
+                h="12px"
                 objectFit={"cover"}
                 borderRadius={"2px"}
               />

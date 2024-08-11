@@ -30,7 +30,7 @@ const LatestArticlesItem: React.FC<ILatestArticleItemProps> = ({
     <Flex
       direction={"column"}
       placeItems={"center"}
-      padding={{ base: "40px 16px", md: "27px" }}
+      p={{ base: "40px 16px", md: "27px" }}
       border={{ base: "0.88px solid #373737", md: "1.37px solid #93A2D361" }}
       boxShadow={"0px 0px 1px 1px #93A2D361"}
       borderRadius={{ base: "26.77px", md: "20.94px" }}
@@ -42,15 +42,15 @@ const LatestArticlesItem: React.FC<ILatestArticleItemProps> = ({
         src={imageSrc}
         alt={title}
         style={{ objectPosition: "bottom" }}
-        width={{ base: "204px", md: "326px" }}
-        height={{ base: "166px", md: "257px" }}
+        w={{ base: "204px", md: "326px" }}
+        h={{ base: "166px", md: "257px" }}
         objectFit={"cover"}
         borderRadius={{ base: "27px", md: "21px" }}
       />
-      <Flex direction={'column'} alignItems={{base:"center",md:'start'}} marginTop={{ base: "39px", md: "35.51px" }}  maxWidth={"295px"}>
+      <Flex direction={'column'} alignItems={{base:"center",md:'start'}} mt={{ base: "39px", md: "35.51px" }}  maxW={"295px"}>
         <Heading
           as="h6"
-          marginBottom={{base:"10px",md:"14px"}}
+          mb={{base:"10px",md:"14px"}}
           fontFamily="heading"
           fontSize={{ base: "16px", md: "21px" }}
           lineHeight={{ base: "35px", md: "27px" }}
@@ -78,18 +78,18 @@ const LatestArticlesItem: React.FC<ILatestArticleItemProps> = ({
           as="button"
           fontFamily="body"
           borderRadius={{ base: "27px", md: "21px" }}
-          maxWidth={"fit-content"}
+          maxW={"fit-content"}
           fontSize={{ base: "11px", md: "16.44px" }}
           lineHeight={{ base: "16.44px", md: "35.59px" }}
-          padding={{ base: "4px 33px", md: "3px 26px" }}
-          backgroundColor={"transparent"}
+          p={{ base: "4px 33px", md: "3px 26px" }}
+          bg={"transparent"}
           border={{ base: "2px solid #424961", md: "1px solid #424961" }}
           boxShadow={"0px 0px 1px 0.1px #424961"}
           color={"#424961"}
           letterSpacing={"0.2px"}
           fontWeight={"600"}
-          marginTop={{ base: "26px", md: "30px" }}
-          marginBottom={{ base: "0px", md: "14px" }}
+          mt={{ base: "26px", md: "30px" }}
+          mb={{ base: "0px", md: "14px" }}
           _hover={{
             backgroundColor: "font.head",
             color: "font.white",
