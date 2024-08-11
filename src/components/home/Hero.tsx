@@ -16,7 +16,6 @@ const Hero = () => {
     <Box
       maxW="1440px"
       m="auto"
-      px={{ base: "4px", md: "15px", xl: "100px" }}
       id="Hero"
     >
       <Box>
@@ -32,7 +31,7 @@ const Hero = () => {
             right={{ base: "18px", md: "41px" }}
             bg={theme.colors.bg.btnBg}
             color={"font.white"}
-            p={{ base: "4px 22px", md: "3px 16.5px" }}
+            p={{ base: "4px 11px", md: "3px 16.5px" }}
             lineHeight={{ base: "26px", md: "36px" }}
             fontWeight={"600"}
             fontSize={{ base: "11px", md: "16px" }}
@@ -73,6 +72,7 @@ const Hero = () => {
         alignItems={{ base: "center", md: "start" }}
         paddingX={{ base: "10px", sm: "63px", md: "4px" }}
         textAlign={{ base: "center", md: "start" }}
+        px={{ base: "4px", md: "15px", xl: "100px" }}
       >
        <MotionBox
           maxW="107px"

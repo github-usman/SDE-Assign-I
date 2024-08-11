@@ -1,5 +1,5 @@
 import ChakraNextImage from "@/containers/ChakraNextImage";
-import { Box, Flex, Heading, Text, useBreakpointValue } from "@chakra-ui/react";
+import { Box, Flex, Heading, Text, useBreakpointValue, useMediaQuery } from "@chakra-ui/react";
 import React, { useEffect, useMemo, useState } from "react";
 import { StaticImageData } from "next/image";
 
@@ -14,7 +14,8 @@ const LatestArticlesItem: React.FC<ILatestArticleItemProps> = ({
   title = "latest item",
   details = "details of the item",
 }) => {
-  const sliceValue = useBreakpointValue({ base: 191, sm: 120 }); 
+  const [isMdOrLarger] = useMediaQuery("(min-width: 768px)");
+  const sliceValue = isMdOrLarger ? 120 : 191;
   const [seeMore, setSeeMore] = useState(sliceValue); 
   const detailsLength = useMemo(() => details.length, [details]);
 

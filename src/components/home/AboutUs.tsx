@@ -7,11 +7,19 @@ import Link from "next/link";
 const AboutUs = () => {
   const theme = useTheme();
   return (
-    <Box bg={theme.colors.bg.contentBg}>
+    <Box
+      bg={{
+        base: theme.colors.bg.aboutBg,
+        md: "transparent",
+      }}
+      bgGradient={{
+        md: "linear(90.07deg, rgba(30, 42, 93, 0.04) 30.91%, rgba(48, 62, 130, 0.04) 64.79%, rgba(60, 80, 157, 0.04) 91.94%)", // Gradient background on md and larger screens
+      }}
+    >
       <Flex
         justify={"space-between"}
         m={"auto"}
-        mt={{ base: "0",xlg:"186px" }}
+        mt={{ base: "0", xlg: "186px" }}
         alignItems={"center"}
         maxW={"1030px"}
         gap={"1rem"}

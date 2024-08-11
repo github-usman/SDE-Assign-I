@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <Box
       bg={theme.colors.bg.contentBg}
-      p={{ base: "52px 41px 52px 41px", md: "84px 6px 92px 6px" }}
+      p={{ base: "52px 42px", md: "84px 6px 92px 6px" }}
       id="Footer"
     >
       <Flex
@@ -167,7 +167,7 @@ const Footer = () => {
             fontSize={{ base: "8.76px", md: "14.66px" }}
             lineHeight={{ base: "8.13px", md: "25.12px" }}
             textAlign={"center"}
-            mt={{ base: "30px", md: "90px" }}
+            mt={{ base: "30px", md: "65px" }}
             fontFamily={"mono"}
           >
             © 2022 Food Truck Example

@@ -17,6 +17,7 @@ export const colors = {
   bg: {
     contentBg: "#F8F8F8",
     btnBg: "#E23744",
+    aboutBg:"#F0F1F7"
   },
   font: {
     head: "#0E2368",
